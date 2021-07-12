@@ -16,7 +16,7 @@ def logging_setup(logfile):
   return logger
 
 def log(Service, Name):
-  print(f'{datetime.datetime.now(None)}\t{Service}\t{Name}')
+  print(f'{datetime.datetime.now(tz=datetime.timezone.utc)}\t{Service}\t{Name}')
 
 def setup_vpc(VPC_NAME='myvpc', VPC_CIDR='10.0.0.0/16'):
   ec2 = boto3.resource('ec2')
