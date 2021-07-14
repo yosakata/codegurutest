@@ -1,6 +1,14 @@
 #!/usr/local/bin/python3
 
 import csv
+import boto3
+
+s3 = boto3.client('s3')
+ec2 = boto3.client('ec2')
+
+print(s3.waiter_names)
+print(ec2.waiter_names)
+exit()
 
 # Case 1
 #f = open('csvSample.csv')
