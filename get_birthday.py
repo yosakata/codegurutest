@@ -17,6 +17,8 @@ def get_age_today(birthday):
     else:
         return today.year - birth_year
 
+rere
+
 
 def main():
     birthday = sys.argv[1]
